@@ -1,0 +1,14 @@
+name: 'build-test'
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  use-test-action: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "doing some stuff"
+      - uses: bvoss/GITHUB_ACTION_PATH-test
