@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: echo "doing some stuff"
-      - uses: bvoss/GITHUB_ACTION_PATH-test
+      - uses: bvoss/GITHUB_ACTION_PATH-test@main
